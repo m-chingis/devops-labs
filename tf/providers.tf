@@ -1,0 +1,13 @@
+# libvirt binaries were installed from DEB package
+terraform {
+  required_providers {
+    libvirt = {
+      source  = "dmacvicar/libvirt"
+      version = "0.6.3" 
+    }
+  }
+}
+
+provider "libvirt" {
+ uri = "qemu:///system"
+}
